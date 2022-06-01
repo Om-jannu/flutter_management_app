@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "42506338661",
+    "project_id": "csimanagementapp-9c50f",
+    "storage_bucket": "csimanagementapp-9c50f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42506338661:android:3aa2b54a1acc470da0218c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_csi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42506338661-dbq67jf2d58ev3ioei14sf252rqaj12l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_6MHbEjMQPR2hzjhjJ07CZ6ApQOV6VPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42506338661-dbq67jf2d58ev3ioei14sf252rqaj12l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
