@@ -1,4 +1,4 @@
-# flutter_csi
+# flutter_management_app
 
 A new Flutter project.
 
