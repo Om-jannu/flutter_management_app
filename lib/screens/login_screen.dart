@@ -1,4 +1,7 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
+import "./registration_screen.dart";
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -71,15 +74,50 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Center(
         child: SingleChildScrollView(
           child: Container(
-            child: Form(
-              key: formkey,
-              child: Column(
-                children: <Widget>[
-
-                  emailField,
-                  passwordField,
-                  loginbutton
-                ],
+            child: Padding(
+              padding: const EdgeInsets.all(50.0),
+              child: Form(
+                key: formkey,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    SizedBox(
+                      height: 200,
+                      child: Image.asset(
+                        "assets/csi.png",
+                        fit: BoxFit.contain,
+                        ),
+                    ),
+                    SizedBox(height: 45),
+                    emailField,
+                    SizedBox(height: 45),
+                    passwordField,
+                    SizedBox(height: 45),
+                    loginbutton,
+                    SizedBox(height: 45),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget> [
+                        Text("Don't have any Account , "),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.push(
+                              context,MaterialPageRoute(builder: (context) => 
+                              RegistrationScreen(),
+                              )
+                            );
+                          },
+                          child: Text("SIGN UP",style:TextStyle(
+                            fontSize:15,
+                            fontWeight: FontWeight.w800,
+                            color: Colors.amber
+                          )),
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ),
