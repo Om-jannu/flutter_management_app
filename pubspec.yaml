@@ -29,11 +29,11 @@ environment:
 dependencies:
   cloud_firestore: ^3.1.17
   cupertino_icons: ^1.0.2
-  ffi: ^2.0.0
   firebase_auth: ^3.3.19
   firebase_core: ^1.17.1
   flutter:
     sdk: flutter
+  fluttertoast: ^8.0.9
   provider: ^6.0.3
 
 dev_dependencies:
@@ -59,9 +59,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - lib/assets/csilogo.webp
-    - lib/assets/csi.png
-    - lib/assets/csilogo.webp
+    - assets/images/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see

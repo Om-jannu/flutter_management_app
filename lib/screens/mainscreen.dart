@@ -1,37 +1,34 @@
-import 'package:firebase_core/firebase_core.dart';
-import "package:flutter/material.dart";
-// import './login.dart';
-import "./login_screen.dart";
+// import 'package:firebase_core/firebase_core.dart';
+// import "package:flutter/material.dart";
+// import "./login_screen.dart";
 
-class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key}) : super(key: key);
+// class MainScreen extends StatefulWidget {
+//   const MainScreen({Key? key}) : super(key: key);
 
-  @override
-  State<MainScreen> createState() => _MainScreenState();
-}
+//   @override
+//   State<MainScreen> createState() => _MainScreenState();
+// }
 
-class _MainScreenState extends State<MainScreen> {
+// class _MainScreenState extends State<MainScreen> {
 
-Future<FirebaseApp> _initializeFirebase() async{
-  FirebaseApp firebaseApp = await Firebase.initializeApp();
-  return firebaseApp;
- }
-
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body:FutureBuilder(
-        future: _initializeFirebase(),
-        builder: (context,snapshot){
-          if(snapshot.connectionState == ConnectionState.done){
-            return LoginScreen();
-          }
-          return const Center(
-            child: CircularProgressIndicator(),
-          );
-        },
-    )
-  );
- }
-}
+// Future<FirebaseApp> _initializeFirebase() async{
+//   FirebaseApp firebaseApp = await Firebase.initializeApp();
+//   return firebaseApp;
+//  }
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body:FutureBuilder(
+//         future: _initializeFirebase(),
+//         builder: (context,snapshot){
+//           if(snapshot.connectionState == ConnectionState.done){
+//             return LoginScreen();
+//           }
+//           return Center(
+//             child: CircularProgressIndicator(),
+//           );
+//         },
+//     )
+//   );
+//  }
+// }

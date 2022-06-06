@@ -121,6 +121,19 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     );
 
    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.blue,
+          ),
+          onPressed: (){
+            Navigator.of(context).pop();
+          },
+        ),
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Container(
@@ -151,6 +164,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     confirmpasswordField,
                     SizedBox(height: 25),
                     signupbutton,
+                    SizedBox(height: 25),
                   ],
                 ),
               ),
@@ -160,5 +174,4 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       ),
     );
   }
-  
 }
